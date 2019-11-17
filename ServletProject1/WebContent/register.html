@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet"href="./form.css"type='text/css'>
+<body>
+<div class="login-card">
+<h1>;)Nigga! <h1><h3>Fill the details below</h3	>
+<form action="rs">
+			UserName* <input type="text" id="un"name="name">
+			email* <input type="text" id="ue" name="email">
+			Phone Number* <input type="text" id="uph" name="mob">
+			Address*<input type="text" id="ua" name="addr">
+			Password* <input type="text" id="up" name="pwd">
+			<input type="text" value="1" hidden="true" name="hidden"> 
+			Gender* <input type="radio" name="Gender">Male    <input type="radio" name="Gender">Female  <input type="radio" name="Gender">Neither<br><br>
+			<input type="submit" value="register">
+		</form>
+</div>
+<script>
+function validate()
+{
+	var un=document.getElementById('un').value;
+var up=document.getElementById('up').value;
+var ue=document.getElementById('ue').value;
+var uph=document.getElementById('uph').value;
+var ua=document.getElementById('ua').value;
+
+if(un==""||un==null)
+{
+	alert("**Please fill the Name field");
+	return false;
+}
+
+if(up==""||up==null)
+{
+	alert("**Please fill the Password field");
+	return false;
+}
+if(ue==""||ue==null)
+{
+	alert("**Please fill the Email field");
+	return false;
+}
+if(uph==""||uph==null)
+{
+	alert("**Please fill the PhoneNumber field");
+	return false;
+}
+if(ua==""||ua==null)
+{
+	alert("**Please fill the Address field");
+	return false;
+}
+
+}
+
+</script>
+</body>
+</html>

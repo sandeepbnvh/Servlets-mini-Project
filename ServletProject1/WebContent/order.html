@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Order your Products</title>
+	</head>
+	<script src="./min.js"></script>
+	<link rel="stylesheet"href="./form.css"type='text/css'>
+	<body >
+	<div class="login-card">
+	<h1>Select Your Orders</h1>
+		<form action="os">
+		<div class="custom-select" style="width:200px"";>
+			<select  name="mobile" id="mobile" >
+				<option>Select Mobile</option>
+				<option>Redmi</option>
+				<option>Samsung</option>
+				<option>Realme</option>
+				<option>Vivo</option>
+			</select>
+			<select name="qty1" id="qty1">
+				<option>Qty</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<br><br>
+			<select name="watch" id="watch">
+				<option>Select Watches</option>
+				<option>Fastrack</option>
+				<option>Sonata</option>
+				<option>Fosil</option>
+				<option>Rolex</option>
+			</select>
+			<select name="qty2" id="qty2">
+				<option>Qty</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<br><br>
+			<select name="shoe" id="shoe">
+				<option>Select Shoes</option>
+				<option>Woodland</option>
+				<option>Bata</option>
+				<option>Addidas</option>
+				<option>Rebook</option>
+			</select>
+			<select name="qty3" id="qty3">
+				<option>Qty</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<input type="text" value="3" hidden="true" name="hidden"></br></br>
+			<input type="submit" value="Order" onclick="return valid()" >
+		</form>
+	</body>
+	<script type="text/javascript">
+			function valid()
+			{	
+				var mobile=$('#mobile').val();
+				var watch=$('#watch').val();
+				var shoe=$('#shoe').val();
+				var qty1=$('#qty1').val();
+				var qty2=$('#qty2').val();
+				var qty3=$('#qty3').val();
+				
+				if(mobile==null || mobile=='' || mobile=="Select Mobile")
+				{
+					alert("Select Mobiles");
+					return false;
+				}
+				if(qty1==null || qty1=='' || qty1=="Qty")
+				{
+					alert("Select qty for mobile");
+					return false;
+				}
+				if(watch==null || watch=='' || watch=="Select Watches")
+				{
+					alert("Select Watches");
+					return false;
+				}
+				if(qty2==null || qty2=='' || qty2=="Qty")
+				{
+					alert("Select qty for watches");
+					return false;
+				}
+				if(shoe==null || shoe=='' || shoe=="Select Shoes")
+				{
+					alert("Select Shoes");
+					return false;
+				}
+				if(qty3==null || qty3=='' || qty3=="Qty")
+				{
+					alert("Select qty for shoes");
+					return false;
+				}
+			}
+		</script>
+</html>

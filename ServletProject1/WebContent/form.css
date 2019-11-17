@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+  background-size:auto;
+  font-family: 'TimesNewRoman';
+}
+
+.login-card {
+  padding: 40px;
+  width: 300px;
+  background-color: Skyblue;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+}
+
+.login-card h1 {
+  font-weight: 50;
+  text-align: center;
+  font-size: 50px;
+}
+.login-card h2 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 70px;
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.login-card input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  align-content: center;
+}
+
+.login-card input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid ;
+  border-top: 1px solid;
+}

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Hey nigga</title>
+</head>
+<script src="./min.js"></script>
+<link rel="stylesheet"href="./form.css"type='text/css'>
+<div class="login-card">
+    <h2>Log-in</h2><br>
+  <form action="ls">
+    USERNAME:<input type="text" id="user" name="uname" placeholder="Enter username Nigga">
+    PASSWORD:<input type="password" id="pass" name ="upwd" placeholder="Enter password Nigga">
+    <input type="submit" value="login" onclick="javascript:validate()" />
+    <input type="text" value="2" hidden="true" name="hidden">
+  </form>
+<script type="text/javascript">
+function validate()
+{
+		var un=document.getElementById('user').value;
+	var up=document.getElementById('pass').value;
+	
+	if(un==""||un==null)
+	{
+		alert("**Please fill the User_Name field");
+		return false;
+	}
+
+	if(up==""||up==null)
+	{
+		alert("**Please fill the Password field");
+		return false;
+	}
+}
+</script>
+</body>
+</html>
+</body>
+</html>
